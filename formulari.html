@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulari</title>
     <link rel="shortcut icon" href="img/mono.png" type="image/x-icon">
 </head>
+
 <body bgcolor="#B2B0F4">
 
     <header>
@@ -18,16 +20,66 @@
         <div>
             <form action="index.html" method="get">
                 <div>
-                    <label for="nom">Nom:</label>
-                    <input type="text" name="nom" id="nom" required maxlength="20">
-                    <label for="llin1">Llin1:</label>
-                    <input type="text" name="llin1" id="llin1" required maxlength="20">
-                    <label for="llin2">Llin2:</label>
-                    <input type="text" name="llin2" id="llin2">
+                    <p>
+                        <label for="nom">Nom<sup>*</sup>:</label>
+                        <input type="text" name="nom" id="nom" required maxlength="20">
+                        <label for="llin1">Llin1<sup>*</sup>:</label>
+                        <input type="text" name="llin1" id="llin1" required maxlength="20">
+                        <label for="llin2">Llin2:</label>
+                        <input type="text" name="llin2" id="llin2">
+                    </p>
+                    <p>
+                        <label for="email">Correu electrònic<sup>*</sup>: </label>
+                        <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+                        <label for="password">Password<sup>*</sup>: </label>
+                        <input type="password" name="password" id="password" required
+                            minlength="8" maxlength="16" placeholder="min 8; max 16;" >
+                            <span title="Mínim: 8 caràcter; Màxim 16;">&#x24D8;</span> 
+                    </p>
+                    <p>
+                        <label for="edad">Edad: </label>
+                        <input type="number" name="edad" id="edad" min="0" max="99">
+                    </p>
+                    <p>
+                        <label for="dataNaix">Data de naixement: </label>
+                        <input type="date" name="dataNaix" id="dataNaix">
+                    </p>
+
+                    <p>
+                        <span>Videojocs:</span>
+                        <input type="checkbox" name="RPG" id="RPG">
+                        <label for="RPG">RPG</label>
+                        <input type="checkbox" name="Sports" id="Sports">
+                        <label for="Sports">Sports</label>
+                        <input type="checkbox" name="Shooter" id="Shooter">
+                        <label for="Shooter">Shooter</label>
+                    </p>
+
+                    <p>
+                        <span>Sexe:</span>
+                        <input type="radio" name="genero" id="home">
+                        <label for="home">Home</label>
+                        <input type="radio" name="genero" id="dona">
+                        <label for="dona">Dona</label>
+                        <input type="radio" name="genero" id="altres">
+                        <label for="altres">Altres</label>
+                    </p>
+
+                    <p>
+                        <label for="provincia">Provincia: </label>
+                        <select name="provincia" id="provincia">
+                            <option value="">Tria una opció</option>
+                            <option value="07">Illes Balears</option>
+                            <option value="08">Barcelona</option>
+                            <option value="28">Madrid</option>
+                        </select>
+                    </p>
+
                 </div>
                 <div>
                     <p>
-                        <input type="submit" value="Allá vamossss">
+                        <input type="submit" value="Let's go!">
+                        <input type="reset" value="Buida formulari">
                     </p>
                 </div>
             </form>
@@ -42,6 +94,7 @@
             &copy; <span>Daniel Martínez</span> &Psi; &#129421;
         </p>
     </footer>
-    
+
 </body>
+
 </html>
