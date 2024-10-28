@@ -1,0 +1,18 @@
+body{
+    background-color: #98dadc;
+}
+
+main {
+    background-color: rgb(184, 184, 125);
+}
+
+.colorMarron{
+    color: rgb(190, 94, 34);
+}
+
+#cabecera{
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    color: aquamarine;
+}
