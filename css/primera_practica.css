@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    background-color: PaleGreen;
+    background-image: linear-gradient(45deg, rgba(223, 153, 153, 0.813), rgba(0, 0, 0, 0.347)), url("../img/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Rajdhani", sans-serif;
+}
+
+/*Selecciona l'element amb id="taula" */
+#taula{
+    background-color: #20B2AA;
+}
+
+#taula tfoot{
+    background-color: #6310CD;
+}
+
+.negreta{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{
+    color: rgba(0, 0, 255, 0.475);
+}
+
+img{
+    border-style: solid;
+    border-color: rgb(17, 139, 129);
+    border-width: 4px;
+
+    margin: 25px;
+    padding: 5px;
+    opacity: 50%;
+    transition: all 1s;
+}
+
+img:hover{
+    width:500px;
+    border-color: rgb(121, 139, 17);
+    opacity: 100%;
+}
+
+#divImatge{
+    text-align: center;
+}
+
+table, td, th{
+    border: 1px solid black;
+}
+
+table{
+    margin: 25px 15px 25px 50px;
+}

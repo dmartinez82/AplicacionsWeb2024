@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primera pràctica</title>
     <link rel="shortcut icon" href="img/mono.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/primera_practica.css">
 </head>
 
-<body bgcolor="PaleGreen">
+<body>
     <header>
         <h1>Benvinguts a la meva web!! &#128034;</h1>
         <h2>Aplicacions Web!!</h2>
@@ -17,14 +18,12 @@
     <hr>
 
     <main>
-        <div>
-            <center>
-                <img src="img/moto.jpg" alt="moto" width="200" title="Dani en moto">
-            </center>
+        <div id="divImatge">
+            <img src="img/moto.jpg" alt="moto" width="200" title="Dani en moto">
         </div>
 
         <div>
-            <a href="https://motos.coches.net/" target="_blank">Compraventa de motos de segunda mano</a>
+            <a href="https://motos.coches.net/" target="_blank" class="negreta">Compraventa de motos de segunda mano</a>
         </div>
 
         <div>
@@ -66,7 +65,7 @@
         </div>
 
         <div>
-            <table border="1" cellspacing="5" cellpadding="5" bgcolor="#20B2AA">
+            <table id="taula">
                 <thead>
                     <tr>
                         <th colspan="5">Alumnes</th>
@@ -75,7 +74,7 @@
                 <tbody>
                     <tr>
                         <td>Pedro</td>
-                        <td colspan="2"><strong>Dani L.</strong></td>
+                        <td colspan="2" class="negreta">Dani L.</td>
                         <td colspan="2">Nestor</td>
                     </tr>
                     <tr>
@@ -90,7 +89,41 @@
                         <td>Agus D.</td>
                     </tr>
                 </tbody>
-                <tfoot bgcolor="#6310CD">
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            Todos suspendidos
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+            <table id="taula2">
+                <thead>
+                    <tr>
+                        <th colspan="5">Alumnes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pedro</td>
+                        <td colspan="2" class="negreta">Dani L.</td>
+                        <td colspan="2">Nestor</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Zion</td>
+                        <td>HTML </td>
+                        <td>Pol</td>
+                        <td>Jesus</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Checa</td>
+                        <td>Mario</td>
+                        <td>Agus D.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
                     <tr>
                         <td colspan="5">
                             Todos suspendidos
