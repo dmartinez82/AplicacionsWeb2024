@@ -26,6 +26,10 @@ body{
     font-weight: bold;
 }
 
+.vermell{
+    color: red;
+}
+
 a{
     text-decoration: none;
     color: blue;
