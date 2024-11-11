@@ -16,10 +16,12 @@ body{
     background-color: #20B2AA;
 }
 
+/*Selecciona els elements tfoot que estiguin de dins un element amb id="taula"*/
 #taula tfoot{
     background-color: #6310CD;
 }
 
+/*Selecciona els elements amb class="negreta" */
 .negreta{
     font-weight: bold;
 }
@@ -37,11 +39,10 @@ img{
     border-style: solid;
     border-color: rgb(17, 139, 129);
     border-width: 4px;
-
     margin: 25px;
-    padding: 5px;
+    padding: 10px;
     opacity: 50%;
-    transition: all 1s;
+    transition: opacity 1s, width 5s;
 }
 
 img:hover{
@@ -59,5 +60,11 @@ table, td, th{
 }
 
 table{
+    font-size: 19px;
+    font-weight: bolder;
     margin: 25px 15px 25px 50px;
+}
+
+h1 span{
+    background-image: linear-gradient(to right, yellow, green 70%, blue 85%);
 }
