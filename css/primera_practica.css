@@ -30,9 +30,17 @@ body{
     color: red;
 }
 
+li{
+    list-style-type: lower-greek;
+}
+
 a{
     text-decoration: none;
     color: blue;
+}
+
+a[target]{
+    color: orange;
 }
 
 a:hover{
@@ -46,6 +54,7 @@ img{
     margin: 25px;
     padding: 10px;
     opacity: 50%;
+    width: 200px;
     transition: opacity 1s, width 5s;
 }
 
@@ -71,4 +80,20 @@ table{
 
 h1 span{
     background-image: linear-gradient(to right, yellow, green 70%, blue 85%);
+}
+
+td[colspan="2"]{
+    text-decoration: underline;
+}
+
+#taula2 tbody tr:nth-child(odd){
+    background-color: chartreuse;
+}
+
+#taula2 tbody tr:nth-child(even){
+    background-color: coral;
+}
+
+.fa-gift{
+    color: rgb(109, 118, 61);
 }
