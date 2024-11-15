@@ -47,7 +47,7 @@ a:hover{
     color: rgba(0, 0, 255, 0.475);
 }
 
-img{
+#divImatge img{
     border-style: solid;
     border-color: rgb(17, 139, 129);
     border-width: 4px;
@@ -58,7 +58,7 @@ img{
     transition: opacity 1s, width 5s;
 }
 
-img:hover{
+#divImatge img:hover{
     width:500px;
     border-color: rgb(121, 139, 17);
     opacity: 100%;
@@ -96,4 +96,29 @@ td[colspan="2"]{
 
 .fa-gift{
     color: rgb(109, 118, 61);
+}
+
+.izq{
+    float: left;
+}
+
+.der{
+    float: right;
+    color: white;
+}
+
+hr{
+    clear: both;
+}
+
+.botonMono{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.corona{
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
