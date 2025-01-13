@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --color_azulito: rgb(49, 55, 221);
+    --fuente: "Rajdhani", sans-serif;
+}
 
 body{
     background-color: PaleGreen;
@@ -8,12 +12,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Rajdhani", sans-serif;
+    font-family: var(--fuente);
 }
 
 /*Selecciona l'element amb id="taula" */
 #taula{
-    background-color: #20B2AA;
+    background-color: var(--color_azulito);
 }
 
 /*Selecciona els elements tfoot que estiguin de dins un element amb id="taula"*/
@@ -27,7 +31,7 @@ body{
 }
 
 .vermell{
-    color: red;
+    color: var(--color_azulito);
 }
 
 li{
@@ -40,7 +44,7 @@ a{
 }
 
 a[target]{
-    color: orange;
+    color: var(--color_azulito);
 }
 
 a:hover{
@@ -121,4 +125,19 @@ hr{
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+.contenedor{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #6310CD;
+    height: 200px;
+}
+
+.item{
+    float: left;
+    width: 30%;
+    background-color: aqua;
+    border: 1px solid black;
 }
