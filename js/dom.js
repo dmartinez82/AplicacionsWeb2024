@@ -7,5 +7,5 @@ let contador = 0;
 function tocame(){
     contador++;
     var veces = (contador==1)?"vez":"veces";
-    boton1.textContent = `Me han tocado ${contador} veces!`;
+    boton1.textContent = `Me han tocado ${contador} ${veces}!`;
 }
