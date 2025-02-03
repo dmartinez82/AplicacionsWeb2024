@@ -1,15 +1,19 @@
 const boton1 = document.querySelector("#boton1");
 const btnSaludo = document.querySelector("#btnSaludo");
 const btnIniciaIntervalo = document.querySelector("#btnIniciaIntervalo");
-const btnParaIntervalo = document.querySelector("#btnParaIntervalo");
+const btnParaxIntervalo = document.querySelector("#btnParaIntervalo");
+const btnImagenRandom = document.querySelector("#btnImagenRandom");
 const footer = document.querySelector("footer");
 const mensaje = document.querySelector("#mensaje");
 const reloj = document.querySelector("#reloj");
+const listaOperaciones = document.querySelector("#listaOperaciones");
+const pImagen = document.querySelector("#pImagen");
 
 boton1.onclick = tocame;
 btnSaludo.onclick = saludo;
 btnIniciaIntervalo.onclick = iniciaIntervalo;
 btnParaIntervalo.onclick = paraIntervalo;
+btnImagenRandom.onclick = muestraImagenRandom;
 
 let contador = 0;
 
@@ -51,6 +55,12 @@ function calcula(){
     }
 
     document.querySelector("#resultat").value= resultadoOperacion;
+
+    guardaRegistroOperacion(primer, segon, operacio, resultadoOperacion);
+}
+
+function guardaRegistroOperacion(primer, segon, operacio, resultadoOperacion){
+    listaOperaciones.innerHTML += `<li>${primer}${operacio}${segon}=${resultadoOperacion}</li>`;
 }
 
 function suma(a, b){
@@ -123,3 +133,8 @@ function iniciaReloj(){
 }
 
 iniciaReloj();
+
+function muestraImagenRandom(){
+    var numAleat = Math.floor(Math.random()*5)+1;
+    pImagen.innerHTML = `<img src="../img/dinamicas/Image0${numAleat}_red.jpg" alt="">`; 
+}

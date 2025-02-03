@@ -39,6 +39,9 @@
 
     <header>
         <h1>Mi primera web con JS</h1>
+        <p id="pImagen">
+
+        </p>
     </header>
 
     <main>
@@ -48,6 +51,9 @@
         <p>
             <button id="boton1">Pulsame!!</button>
             <button id="btnSaludo">Te saludo</button>
+            <button id="btnImagenRandom">Imagen aleatoria</button>
+        </p>
+        <p>
             <button id="btnIniciaIntervalo">Comienza a generar!</button>
             <button id="btnParaIntervalo">STOP!</button>
         </p>
@@ -64,6 +70,15 @@
             <input type="button" value="Calcula" onclick="calcula()">
             <input type="text" id="resultat" disabled readonly size="3">
         </p>
+
+        <p>
+            <span>Historial de Operaciones</span>
+            <ul id="listaOperaciones">
+            </ul>
+
+        </p>
+
+        <hr>
 
         <p>
             <span id="reloj"></span>
