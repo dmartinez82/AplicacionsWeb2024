@@ -8,8 +8,29 @@
     <script src="./js/dom.js" defer></script>
 
     <style>
-        .fondoVerde{
+        .fondoVerde {
             background-color: lightgreen;
+        }
+
+        .gradient {
+            animation: mymove 4.6s infinite;
+        }
+
+        @keyframes mymove {
+            0% {
+                background-color: red;
+                color: blue;
+            }
+
+            50% {
+                background-color: blue;
+                color: yellow;
+            }
+
+            100% {
+                background-color: yellow;
+                color: red;
+            }
         }
     </style>
 </head>
@@ -22,13 +43,25 @@
 
     <main>
         <p>
-            <h3 id="mensaje"></h3>
+        <h3 id="mensaje"></h3>
         </p>
         <p>
             <button id="boton1">Pulsame!!</button>
             <button id="btnSaludo">Te saludo</button>
         </p>
-
+        <p>
+            <input type="number" id="primer" min="0" max="9">
+            <select id="operacions">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="rand">random</option>
+            </select>
+            <input type="number" id="segon" min="0" max="9">
+            <input type="button" value="Calcula" onclick="calcula()">
+            <input type="text" id="resultat" disabled readonly size="3">
+        </p>
 
     </main>
 
