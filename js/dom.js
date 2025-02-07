@@ -15,6 +15,29 @@ btnIniciaIntervalo.onclick = iniciaIntervalo;
 btnParaIntervalo.onclick = paraIntervalo;
 btnImagenRandom.onclick = muestraImagenRandom;
 
+document.onkeydown = (e) => teclaPresionada(e);
+
+function teclaPresionada(e){
+    let tecla = e.key.toUpperCase();
+    
+    if (!isNaN(tecla)) tecla = parseInt(tecla)
+
+    if(/^[0-9]$/.test(tecla)){
+        cambiaFondo(tecla);
+    } else if(tecla=="S"){
+        paraIntervalo();
+    } else if (tecla=="C"){
+        iniciaIntervalo();
+    }
+}
+
+function cambiaFondo(num){
+    let red = Math.floor(Math.random()*(255/num));
+    let green = Math.floor(Math.random()*(255/num));
+    let blue = Math.floor(Math.random()*(255/num));
+    document.body.style.backgroundColor  = `rgb(${red}, ${green}, ${blue})`;
+}
+
 let contador = 0;
 
 function tocame(){
